@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML com JS</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Validação</h1>
+        <h2>Insira os valores nos campo abaixo:</h2>
+        <form id='form-valid'>
+            <div class="center">
+                <label for="A"><b>Valor A:</b></label>
+                <input type="number" id='valor-a' class="input" required placeholder="Digite o valor A" />
+                <label for="B"><b>Valor B:</b></label>
+                <input type="number" id='valor-b' class="input" required placeholder="Digite o valor B" />
+                <p class='error-message'>
+                    O valor B precisa ser maior que o valor A!
+                </p>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <p class="confirmed-message"></p>
+    </div>
+    <script src="./form.js"></script>
+</body>
+</html>
